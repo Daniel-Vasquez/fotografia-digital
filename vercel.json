@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/cursos/fotografia-nikon-d3300/01-conoce-tu-nikon-d3300",
+      "permanent": false
+    }
+  ]
+}
