@@ -1,0 +1,10 @@
+---
+import { getCollection } from "astro:content";
+
+const [course] = await getCollection("courses", ({ data }) => data.published);
+const [first] = (
+  await getCollection("sections", ({ data }) => data.course === course.data.id)
+).sort((a, b) => a.data.order - b.data.order);
+
+return Astro.redirect(`/cursos/${course.data.slug}/${first.id.split("/").pop()}`);
+---

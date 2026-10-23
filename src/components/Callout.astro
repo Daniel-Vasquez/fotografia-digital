@@ -1,0 +1,32 @@
+---
+interface Props {
+  type: "risk" | "exercise" | "mastery" | "note" | "tip" | "warning";
+  title?: string;
+}
+
+const { type, title } = Astro.props;
+
+const variants = {
+  risk: { label: "Complicaciones y riesgos", border: "border-danger" },
+  exercise: { label: "Ejercicio", border: "border-accent" },
+  mastery: { label: "Lo dominas si…", border: "border-accent-strong" },
+  note: { label: "Nota", border: "border-info" },
+  tip: { label: "Consejo", border: "border-accent" },
+  warning: { label: "Cuidado", border: "border-warning" },
+} as const;
+
+const { label, border } = variants[type];
+---
+
+<aside
+  class:list={[
+    "callout my-8 rounded-r-xl border-l-4 bg-surface px-5 py-4",
+    "[&>*:nth-child(2)]:mt-2 [&>*:last-child]:mb-0",
+    border,
+  ]}
+>
+  <span class="block font-sans text-xs font-semibold tracking-wide text-muted uppercase">
+    {title ?? label}
+  </span>
+  <slot />
+</aside>

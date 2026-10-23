@@ -1,0 +1,218 @@
+---
+sectionId: "B1.10"
+course: "B1"
+title: "Formato y procesado en cámara"
+order: 10
+minutes: 130
+summary: "Cambias a NEF + JPEG fina y compruebas en la Mac cuánto margen te da el RAW, eliges el Picture Control de cada escena y decides cuándo activar el D-Lighting y la reducción de ruido."
+---
+
+Cada vez que disparas, la cámara toma los datos en bruto del sensor y los convierte en una imagen: decide el color, el contraste, la nitidez y cuánto comprimir. Si guardas solo el JPEG, esas decisiones quedan fijas; si guardas también el RAW, puedes rehacerlas en la Mac. En esta sección vas a comparar el JPEG con el RAW, a configurar tu cámara en NEF + JPEG fina, a elegir y ajustar el Picture Control, y a decidir cuándo activar el D-Lighting, la reducción de ruido y qué espacio de color usar.
+
+**Lo que tendrás al terminar:** la cámara configurada en NEF + JPEG fina, cuatro fotos rescatadas en la Mac comparando el JPEG con el NEF, una serie de fotos con cada Picture Control y tu propio Picture Control de paisaje guardado en la cámara.
+
+**Requisitos:** B1.5, para el ruido, B1.7, para el histograma y las altas luces, y B1.9, para el balance de blancos. El cable USB para pasar las fotos a la Mac, frutas de colores, una planta, una taza y tu bitácora.
+
+## Paso 1: entender qué procesa la cámara
+
+El sensor capta datos "en bruto": los niveles de luz de cada píxel, sin color definitivo, sin contraste y sin nitidez. Después, el procesador de la cámara (EXPEED 4) los convierte en una imagen visible, aplicando:
+
+- **Balance de blancos:** el color de la luz (B1.9).
+- **_Picture Control_:** color, contraste, saturación y nitidez.
+- **D-Lighting activo:** el equilibrio entre luces y sombras.
+- **Reducción de ruido:** el suavizado del grano (B1.5).
+- **Compresión:** para que el archivo ocupe menos.
+
+## Paso 2: comparar JPEG y RAW
+
+|                         | **JPEG**                                                                                     | **RAW (en Nikon, archivo NEF)**                                                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Qué es                  | La imagen **ya procesada y comprimida** por la cámara                                        | Los **datos en bruto del sensor**, sin procesar de forma definitiva                                                                        |
+| Niveles por color       | **8 bits por canal:** 256 niveles de brillo por color (rojo, verde, azul)                    | **12 bits por canal** en tu D3300: **4096 niveles** por color, 16 veces más que el JPEG                                                    |
+| Decisiones de la cámara | Quedan **"horneadas"**: puedes editar después, pero con margen limitado                      | El balance de blancos, el Picture Control y la nitidez se guardan como "sugerencia": **puedes cambiarlos libremente** después, sin pérdida |
+| Ventajas                | Archivos más pequeños, listos para compartir; se ven igual en cualquier dispositivo          | La información extra permite recuperar altas luces y sombras con mucha más calidad                                                         |
+| Desventajas             | Si aclaras mucho una sombra o cambias mucho el color, aparecen ruido, bandas y colores raros | Archivos más pesados; hay que "revelarlos" (procesarlos) en un programa antes de compartirlos                                              |
+
+El JPEG es un **pastel ya horneado**: puedes ponerle betún encima o cortarlo, pero no puedes cambiar la cantidad de azúcar. El RAW son los **ingredientes medidos y listos**: tú decides cómo hornearlo, y puedes hornearlo de nuevo de otra forma cuantas veces quieras.
+
+Los tamaños varían según la escena; como referencia, con 24 MP:
+
+| Formato         | Tamaño aprox. | Fotos aprox. en una tarjeta de 32 GB |
+| --------------- | ------------- | ------------------------------------ |
+| NEF (RAW)       | ~20 MB        | ~1,300                               |
+| JPEG fina, L    | ~10–12 MB     | ~2,500                               |
+| NEF + JPEG fina | ~32 MB        | ~900                                 |
+
+Así se nota la diferencia con una foto de tu sala de día, tomada por error con compensación **−2**, en NEF + JPEG fina e ISO 400, y aclarada +2 pasos en la Mac:
+
+| Archivo aclarado +2               | Resultado                                                                                                                                                      |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **JPEG**                          | Recupera brillo, pero las sombras muestran grano grueso y manchas de color, los degradados (una pared) pueden mostrar **bandas** y los colores se ven apagados |
+| **NEF** (en NX Studio o en Fotos) | Mucho más limpio, colores correctos y sombras con detalle; prácticamente parece una foto bien expuesta, con un poco más de ruido                               |
+
+## Paso 3: configurar NEF (RAW) + JPEG fina
+
+Como tienes una Mac y te interesan el paisaje, la arquitectura y la fotografía nocturna, escenas de alto contraste y luz difícil, la recomendación es **NEF (RAW) + JPEG fina**:
+
+- **El JPEG:** te sirve para ver y compartir rápido.
+- **El NEF:** es tu "negativo digital", para rescatar o mejorar las fotos importantes.
+
+Para configurarlo: botón **_i_** > **Calidad de imagen** > **NEF (RAW) + JPEG fina** > **OK**, con el tamaño de imagen en **L**. Es el cambio que anunciaba B1.1, donde dejaste la cámara en JPEG fina.
+
+<Callout type="risk">
+
+- **Usar una calidad JPEG distinta de fina:** tu D3300 ofrece **fina** (menos compresión, mejor calidad), **normal** y **básica** (más compresión). Usa siempre **fina**.
+- **La tarjeta se llena antes:** con NEF + JPEG fina caben unas 900 fotos en 32 GB, frente a unas 2,500 solo en JPEG. Revisa el contador de la pantalla antes de cada salida.
+
+</Callout>
+
+## Paso 4: elegir la personalidad del JPEG con Picture Control
+
+El Picture Control define cómo procesa la cámara el color y el contraste del JPEG; en el NEF queda como sugerencia editable.
+
+| Picture Control    | Carácter                                        | Úsalo para                                                                                                                                                                                                    |
+| ------------------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Estándar (SD)**  | Equilibrado, con algo de contraste y saturación | Uso general.                                                                                                                                                                                                  |
+| **Neutro (NL)**    | Suave, poco contraste, colores moderados        | Si vas a editar mucho después.                                                                                                                                                                                |
+| **Intenso (VI)**   | Saturación y contraste altos                    | Colores llamativos (flores, atardeceres); cuidado con exagerar.                                                                                                                                               |
+| **Monocromo (MC)** | Blanco y negro                                  | Arquitectura, texturas, días nublados. Tiene **filtros de color**: amarillo (Y), naranja (O), rojo (R), verde (G), que oscurecen o aclaran ciertos colores (el rojo oscurece mucho el cielo azul: dramático). |
+| **Retrato (PT)**   | Tonos de piel suaves                            | Personas.                                                                                                                                                                                                     |
+| **Paisaje (LS)**   | Verdes y azules vivos, buena nitidez            | **Paisaje, naturaleza, arquitectura con cielo.**                                                                                                                                                              |
+
+Para elegirlo y ajustarlo:
+
+1. **Elegir:** botón **_i_** > **Picture Control** > elige SD, NL, VI, MC, PT o LS > **OK**.
+2. **Ajustar:** **MENU** > **Disparo** > **Fijar Picture Control** > elige uno > **▶**. Ajusta el **Ajuste rápido** o cada parámetro con ▲ ▼ y ◀ ▶: **Nitidez, Contraste, Brillo, Saturación y Tono** (en Monocromo, también **Efectos de filtro** y **Cambio de tono**). Presiona **OK**.
+3. Un Picture Control modificado aparece con un asterisco.
+
+Una maceta junto a la ventana, con el cielo detrás; modo A, f/8 e ISO 200:
+
+| Picture Control             | Resultado                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------- |
+| **Estándar**                | Verde natural, cielo azul claro, contraste moderado.                                  |
+| **Paisaje**                 | Verde más vivo, cielo más azul, hojas más nítidas.                                    |
+| **Intenso**                 | Verdes muy saturados, quizá artificiales; contraste fuerte.                           |
+| **Monocromo + filtro rojo** | Blanco y negro con cielo oscuro y dramático, nubes muy marcadas, hojas en gris medio. |
+
+- **Monocromo entrena tu ojo:** con este Picture Control, la pantalla y Live View muestran la escena en blanco y negro mientras compones, lo que te ayuda a ver formas y luz. Si disparas en NEF + JPEG, el NEF conserva el color.
+
+<Callout type="risk">
+
+- **Intenso en todo:** los colores llamativos funcionan en flores y atardeceres, pero en una planta pueden verse artificiales. Úsalo con cuidado, no por defecto.
+- **Olvidar que el Picture Control está en Monocromo:** todos los JPEG siguientes saldrán en blanco y negro. Si solo disparas en JPEG, el color se pierde; mira el ícono de la pantalla de información antes de cada sesión.
+
+</Callout>
+
+## Paso 5: decidir cuándo usar el D-Lighting activo
+
+El **D-Lighting activo** protege las altas luces y aclara las sombras en escenas de **alto contraste**, como los contraluces o el sol fuerte con sombras. Funciona subexponiendo un poco la toma y aclarando después las sombras en el procesamiento. En la D3300 solo tiene **Activado** o **Desactivado**: botón **_i_** > **D-Lighting activo** > **Activado** / **Desactivado**.
+
+Una taza frente a la ventana, con medición matricial y compensación 0:
+
+| D-Lighting      | Resultado                                                                                                                                                   |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Desactivado** | La taza oscura, la ventana con detalle en el centro pero quemada en los bordes.                                                                             |
+| **Activado**    | La taza más clara y visible, la ventana con algo más de detalle; el conjunto se ve más "como lo vieron tus ojos", pero con un poco más de ruido en la taza. |
+
+- **Recomendación:** desactivado por defecto; actívalo en contraluces o escenas con sol muy duro.
+
+<Callout type="risk">
+
+- **Más ruido en las sombras:** el D-Lighting aclara las sombras después de subexponer, y con ellas aclara el ruido. Revisa las sombras ampliadas.
+- **Escenas "aplanadas":** en una escena que debe tener contraste, el D-Lighting la vuelve gris y sin fuerza. No lo dejes activado siempre.
+- **D-Lighting de noche o en modo M:** cambia la exposición que tú decidiste. **Desactívalo** de noche y cuando uses el modo M.
+
+</Callout>
+
+## Paso 6: activar la reducción de ruido y elegir el espacio de color
+
+La cámara tiene dos reducciones de ruido:
+
+- **RR ISO alta:** suaviza el ruido en ISO altos, como viste en B1.5.
+- **RR exposición prolongada:** en exposiciones de **más de 1 segundo**, la cámara toma automáticamente una segunda exposición "en negro", con el obturador cerrado y del mismo tiempo, y la resta de la foto. Así elimina los **píxeles calientes**, puntitos de colores que aparecen con el sensor caliente en exposiciones largas.
+
+El **espacio de color** define la gama de colores del archivo:
+
+- **sRGB:** el estándar de pantallas, de internet y de la mayoría de las impresiones. **Recomendado.**
+- **Adobe RGB:** más amplio, para flujos de impresión profesional.
+
+Para configurarlo todo:
+
+1. **MENU** > **Disparo** > **RR exposición prolongada** > **Activada**.
+2. **MENU** > **Disparo** > **RR ISO alta** > **Normal**.
+3. **MENU** > **Disparo** > **Espacio de color** > **sRGB**.
+
+<Callout type="tip" title="Para tus temas">
+
+Para tu fotografía nocturna, activa la RR exposición prolongada, sobre todo con exposiciones de más de 10 s o en noches calurosas.
+
+</Callout>
+
+<Callout type="risk">
+
+- **La RR exposición prolongada duplica el tiempo:** una exposición de 20 s tarda unos **40 s** en total. Durante ese tiempo verás un mensaje de procesamiento y no podrás disparar. Espera a que termine antes de apagar la cámara.
+- **Adobe RGB sin gestionarlo:** si no lo gestionas bien, tus fotos se verán apagadas en algunas pantallas. Quédate en sRGB.
+
+</Callout>
+
+## Ejercicio práctico
+
+<Callout type="exercise">
+
+1. **La prueba de rescate: JPEG frente a RAW (50 min).** Comprueba con tus ojos la ventaja del RAW. Prepara una escena variada junto a la ventana: una planta, una taza, libros y la ventana en parte del encuadre.
+   1. Pon la calidad en **NEF (RAW) + JPEG fina**, el modo **A**, **f/8**, **ISO 400**, el D-Lighting **desactivado** y el balance en **Automático**.
+   2. **Foto 1:** compensación **0** (la referencia).
+   3. **Foto 2:** compensación **−2** (muy oscura).
+   4. **Foto 3:** compensación **+1.7** (muy clara; la ventana se quemará).
+   5. **Foto 4:** compensación 0, pero con el balance de blancos en **Incandescente** (azul a propósito).
+   6. Pasa las fotos a la Mac: por ahora, conecta el cable USB y usa **Fotos** o **Captura de Imagen** (el detalle lo verás en B1.16). Se importarán pares JPEG + NEF.
+   7. Instala **NX Studio** (gratis, de Nikon) o usa **Fotos** (Editar > Ajustar).
+   8. En la **Foto 2**, aclara +2 pasos el JPEG y, por separado, el NEF, y compáralos al 100%.
+   9. En la **Foto 3**, baja la exposición y las **altas luces** en los dos archivos.
+   10. En la **Foto 4**, corrige el balance de blancos en los dos archivos (en el NEF, elige "Luz de día" o mueve la temperatura).
+2. **Laboratorio de Picture Control y D-Lighting (40 min).** Conoce la "personalidad" de cada Picture Control y crea el tuyo para paisaje. Prepara frutas de colores (una naranja, un plátano, una manzana roja, un limón) y una planta verde junto a la ventana, con un poco de cielo visible si es posible.
+   1. Pon el modo **A**, **f/8** e ISO 200, con la cámara apoyada y el mismo encuadre para todas las fotos. Usa solo **JPEG fina** en este ejercicio, para ver el efecto directo.
+   2. Toma una foto con cada Picture Control: **SD, NL, VI, MC, PT y LS**.
+   3. En **Monocromo**, toma tres más con **Efectos de filtro**: **Amarillo (Y)**, **Rojo (R)** y **Verde (G)**, fijándote en el tono de gris de la manzana roja y de la planta.
+   4. **Crea tu Picture Control de paisaje:** **MENU** > **Disparo** > **Fijar Picture Control** > **Paisaje** > **▶** > **Saturación +1** y **Nitidez +1** (o al gusto) > **OK**. Toma una foto.
+   5. Coloca la taza a contraluz contra la ventana y toma una foto con el D-Lighting **Desactivado** y otra **Activado**.
+   6. Compara las fotos en la Mac en cuadrícula.
+
+</Callout>
+
+Solución. En la prueba de rescate, cada foto muestra una ventaja distinta del RAW:
+
+| Foto                          | JPEG                                   | NEF                                          |
+| ----------------------------- | -------------------------------------- | -------------------------------------------- |
+| **Foto 2** (−2, aclarada)     | Sombras con más ruido y peores colores | Sombras más limpias y mejores colores        |
+| **Foto 3** (+1.7, oscurecida) | Casi nada: lo quemado es blanco puro   | Recupera algo de detalle en las zonas claras |
+| **Foto 4** (Incandescente)    | Mejora, pero queda con tintes          | Vuelve a colores perfectos                   |
+
+- **El RAW no hace milagros, pero te da mucho más margen:** la Foto 3 sigue teniendo partes perdidas. **Exponer bien sigue siendo lo más importante.**
+
+En el laboratorio de Picture Control, decide qué foto representa mejor lo que viste y cuál te gusta más. En los monocromos, el filtro rojo **aclara** los rojos y **oscurece** los azules y los verdes, y el verde aclara los verdes: elige el que hace que la manzana y la planta se distingan mejor. En el D-Lighting, amplía la sombra de la taza: se ve mejor con el D-Lighting activado, pero con más ruido.
+
+- **Deja configurado el Picture Control que más te gustó para paisaje:** en el NEF puedes cambiarlo después.
+
+<Callout type="risk">
+
+- **Comparar el JPEG y el NEF con ajustes distintos:** si aclaras uno +2 y el otro +1.7, la comparación no vale. Aplica exactamente los mismos valores a los dos archivos.
+- **Juzgar el rescate sin ampliar:** a tamaño de pantalla, el JPEG aclarado puede parecer aceptable. El ruido y las bandas se ven al 100%.
+- **Olvidar volver a NEF + JPEG fina después del laboratorio:** el ejercicio 2 se hace solo en JPEG fina, y si no cambias la calidad, las siguientes fotos no tendrán RAW.
+
+</Callout>
+
+<Callout type="mastery">
+
+Disparas en NEF + JPEG fina sabiendo qué margen te da cada archivo y que exponer bien sigue siendo lo primero, eliges el Picture Control según la escena y tienes uno ajustado para paisaje, activas el D-Lighting solo en contraluces y sol duro, y usas la reducción de ruido de exposición prolongada de noche, contando con que duplica el tiempo de cada foto.
+
+</Callout>
+
+## Resumen
+
+- La cámara procesa los datos del sensor con el balance de blancos, el Picture Control, el D-Lighting, la reducción de ruido y la compresión.
+- El JPEG tiene 256 niveles por color y las decisiones horneadas; el NEF tiene 4096 y se puede rehacer en la Mac.
+- NEF + JPEG fina te da un archivo para compartir y un "negativo digital" para rescatar las fotos importantes.
+- El Picture Control da la personalidad del JPEG; Paisaje para paisaje y Monocromo para entrenar tu ojo a la luz y las formas.
+- El D-Lighting activo equilibra los contraluces, pero añade ruido: desactívalo de noche y en modo M.
+- La RR exposición prolongada elimina los píxeles calientes de noche, a cambio de duplicar el tiempo de cada foto.

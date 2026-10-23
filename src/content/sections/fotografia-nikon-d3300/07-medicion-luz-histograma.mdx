@@ -1,0 +1,196 @@
+---
+sectionId: "B1.7"
+course: "B1"
+title: "Medición de la luz y el histograma"
+order: 7
+minutes: 130
+summary: "Eliges qué parte de la escena mide la cámara, lees el histograma y las altas luces para saber si una foto está bien expuesta, y fijas la exposición con AE-L para medir en un punto y recomponer."
+---
+
+El exposímetro no mide siempre lo mismo: puede analizar toda la escena, dar más peso al centro o fijarse solo en un punto, y en un contraluz cada opción da una foto distinta. Después de disparar, la pantalla de la cámara engaña, pero el histograma no. En esta sección vas a elegir el modo de medición según la escena, a leer el histograma y las altas luces para juzgar la exposición, a entender el rango dinámico y a bloquear la exposición con AE-L para medir en un punto y recomponer.
+
+**Lo que tendrás al terminar:** cuatro fotos de un contraluz con cada modo de medición y la diferencia en pasos entre ellas, tres escenas (clara, oscura y normal) con sus histogramas anotados, y dos fotos que comparan recomponer con y sin AE-L.
+
+**Requisitos:** B1.6, para la compensación de exposición. Las opciones de visualización de reproducción activadas en B1.1. Una taza blanca y otra oscura (o una fruta), una hoja blanca, la tela negra, una planta y tu bitácora.
+
+## Paso 1: elegir el modo de medición
+
+El modo de medición define **qué parte de la escena** usa el exposímetro para calcular la exposición:
+
+| Modo                  | Ícono                                 | Qué mide                                                                                                                                                                                                       | Cuándo usarlo                                                                                                  |
+| --------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Matricial**         | Un rectángulo con un punto y un marco | **Toda la escena**, dividida en zonas, con un sensor de color de 420 píxeles; compara el resultado con una base de datos interna de escenas y considera la distancia de enfoque y la posición del punto activo | **Por defecto**, especialmente en paisaje. Es la más "inteligente" y la que acierta en la mayoría de los casos |
+| **Ponderada central** | Un círculo dentro de un rectángulo    | Toda la escena, pero da mucho más peso (alrededor del 75%) a un **círculo central de 8 mm** en el visor                                                                                                        | Cuando el sujeto está en el centro y ocupa buena parte del encuadre. Más predecible que la matricial           |
+| **Puntual**           | Un punto dentro de un rectángulo      | **Solo un círculo de unos 3.5 mm** (aprox. el 2.5% del encuadre), centrado en el **punto de enfoque activo**; ignora todo lo demás                                                                             | **Contraluces**, escenas de alto contraste, la Luna, un objeto iluminado sobre un fondo oscuro (o al revés)    |
+
+Imagina que debes decidir la temperatura de un salón. Con la **matricial**, preguntas a todos los invitados y usas tu experiencia para decidir. Con la **ponderada central**, preguntas a todos, pero le haces más caso a los que están en el centro. Con la **puntual**, le preguntas solo al festejado.
+
+Para cambiarlo, presiona **_i_**, selecciona el ícono de **Medición**, presiona **OK**, elige **Matricial**, **Ponderada central** o **Puntual** y presiona **OK**.
+
+La medición puntual sigue al punto de enfoque activo. Para moverlo:
+
+1. Presiona **_i_** > **Modo de zona AF** y elige **Punto único** (lo verás a fondo en B1.8).
+2. Con el exposímetro activo (presiona el disparador a medias y suéltalo), usa el **multiselector** para mover el punto de enfoque por los 11 puntos.
+
+<Callout type="risk">
+
+- **Medición puntual con zona AF automática:** la cámara mide en el centro, no donde tú crees. Pon la zona AF en **Punto único** para saber exactamente qué se mide.
+- **La puntual sobre una zona que no es de tono medio:** mide un punto blanco y lo convertirá en gris, como viste en B1.6. Apunta a un tono medio, o compensa si mides un blanco o un negro.
+
+</Callout>
+
+## Paso 2: leer el histograma
+
+El **histograma** es una gráfica que muestra **cuántos píxeles hay de cada brillo** en la foto:
+
+- **Eje horizontal:** el brillo, de **negro puro (izquierda)** a **blanco puro (derecha)**, con los tonos medios en medio.
+- **Eje vertical:** cuántos píxeles tienen ese brillo.
+
+| Forma de la "montaña"                                          | Qué significa                                                                                                                        |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Pegada al borde izquierdo (como si se cortara contra la pared) | Sombras **empastadas** (negro sin detalle). Puede ser subexposición o una escena con negros profundos naturales (de noche es normal) |
+| Pegada al borde derecho                                        | Altas luces **quemadas** (blanco sin detalle). Generalmente es lo que más debes evitar: un cielo quemado no se recupera              |
+| Repartida sin tocar los bordes                                 | La escena cabe completa en el rango que el sensor puede registrar                                                                    |
+
+**No existe "el histograma correcto":** depende de la escena.
+
+- **Escena de tonos claros (niebla, edificio blanco, nieve):** montaña cargada a la derecha.
+- **Escena oscura (noche, objeto negro):** montaña cargada a la izquierda.
+- **Escena de alto contraste (sol directo y sombras):** montaña en forma de "U", con picos en ambos extremos. Puede que **no quepa** en el rango del sensor, y tendrás que elegir qué sacrificar.
+
+La D3300 te muestra además el **histograma RGB**: tres histogramas, uno por canal de color (rojo, verde y azul). Sirve para ver si un color se está "saturando".
+
+Si no activaste el histograma en B1.1, ve a **MENU** > **Reproducción** > **Opciones de visualización de reproducción**, marca **Altas luces** e **Histograma RGB** y confirma. En reproducción, cambia de pantalla con **▲ ▼**.
+
+<Callout type="risk">
+
+- **Buscar siempre una montaña centrada:** una escena de nieve bien expuesta tiene la montaña a la derecha, y una nocturna, a la izquierda. Juzga el histograma según la escena, no según una forma ideal.
+- **Fiarte solo del histograma general:** el rojo de una flor muy intensa puede quemarse aunque el histograma general se vea bien. Revisa el histograma RGB en los colores fuertes.
+
+</Callout>
+
+## Paso 3: vigilar las altas luces y el rango dinámico
+
+En la vista de **Altas luces** de reproducción, las áreas quemadas **parpadean**:
+
+- **Si parpadea algo que te importa:** un cielo, una pared blanca o el pétalo de una flor. Baja la exposición, con compensación − o con una velocidad más rápida en M.
+- **Si parpadea una lámpara o el reflejo del sol en un vidrio:** suele ser aceptable.
+
+El **rango dinámico** es la diferencia de brillo, en pasos, entre lo más oscuro y lo más claro que el sensor puede registrar con detalle en una sola foto. Tu D3300 maneja muy bien un rango amplio, pero aun así una escena con **sol directo** y **sombras profundas** puede sobrepasarlo.
+
+<Callout type="tip" title="Para tus temas">
+
+En paisaje y arquitectura al mediodía, el cielo y las sombras de los edificios suelen exceder el rango dinámico. Por eso las primeras y últimas horas del día son más fáciles.
+
+</Callout>
+
+## Paso 4: bloquear la exposición con AE-L
+
+A veces quieres **medir en un punto y luego reencuadrar** sin que la exposición cambie. El botón **AE-L/AF-L**, en la parte trasera, bloquea la exposición (y, de fábrica, también el enfoque) **mientras lo mantienes presionado**.
+
+La técnica de "medir y recomponer":
+
+1. Apunta el punto de medición a la zona de tono medio importante.
+2. Mantén presionado **AE-L/AF-L**.
+3. Recompón la foto.
+4. Dispara sin soltar AE-L.
+
+Para cambiar la función del botón, ve a **MENU** > **Configuración** > **Botones** > **Asignar botón AE-L/AF-L**:
+
+| Opción                | Qué hace                                                              |
+| --------------------- | --------------------------------------------------------------------- |
+| Bloqueo AE/AF         | Bloquea exposición y enfoque mientras se presiona (de fábrica)        |
+| **Solo bloqueo AE**   | Solo la exposición. Recomendado si quieres separar medición y enfoque |
+| Solo bloqueo AF       | Solo el enfoque                                                       |
+| Bloqueo AE (mantener) | La exposición se queda bloqueada hasta presionar de nuevo             |
+| AF-ON                 | El botón enfoca                                                       |
+
+<Callout type="risk">
+
+- **El disparador a medias no bloquea la exposición:** bloquea el enfoque (en AF-S), pero el exposímetro sigue midiendo mientras reencuadras. Para fijar la exposición, usa **AE-L**.
+- **Soltar AE-L antes de disparar:** con la opción de fábrica, al soltarlo la cámara vuelve a medir la escena recompuesta. Mantenlo presionado hasta que la foto esté tomada, o usa "Bloqueo AE (mantener)".
+
+</Callout>
+
+## Paso 5: comparar los modos de medición en un contraluz
+
+Una taza entre tú y una ventana muy luminosa; modo A, f/5.6, ISO 200 y 35 mm:
+
+| Medición                                  | Velocidad (aprox.) | Resultado                                                                                                                    |
+| ----------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Matricial**                             | 1/250 s            | Un término medio: ventana clara pero con algo de detalle, taza oscura (casi silueta).                                        |
+| **Ponderada central** (taza en el centro) | 1/125 s            | Taza algo más visible, ventana más clara.                                                                                    |
+| **Puntual sobre la taza**                 | 1/30 s             | Taza perfectamente expuesta con su color y textura; la ventana completamente **blanca y quemada** (parpadea en Altas luces). |
+| **Puntual sobre el cielo/ventana**        | 1/1000 s           | Cielo con color y nubes; la taza es una **silueta negra** perfecta.                                                          |
+
+- **No hay medición "mejor":** depende de qué quieres mostrar. Para siluetas, por ejemplo un edificio contra un atardecer, mide puntual sobre el cielo.
+
+## Paso 6: leer los histogramas de tres escenas
+
+| Escena                                                          | Forma del histograma                                                                     | ¿Está bien?                                                     |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Vista nocturna de la ciudad, bien expuesta                      | Gran montaña a la izquierda; algunos picos pequeños tocando el borde derecho (las luces) | **Sí**: la noche es oscura y las luces pueden quemarse un poco. |
+| Paisaje con cielo nublado a mediodía, matricial, compensación 0 | Montaña en el centro y un pico pegado al borde derecho (cielo)                           | **Revisar**: si parpadea el cielo, compensa −0.7 a −1.          |
+| Taza blanca sobre mantel blanco, compensación +1.3              | Montaña cargada a la derecha, sin tocar el borde                                         | **Sí**: es una escena clara.                                    |
+
+- **Un pico en el borde derecho no siempre es un error:** en la escena nocturna son las luces, y está bien; en el paisaje es el cielo, y hay que corregirlo.
+
+## Ejercicio práctico
+
+<Callout type="exercise">
+
+1. **Tres mediciones contra la ventana (40 min).** Comprueba cómo cada modo de medición interpreta un contraluz. Coloca una taza (o una planta) sobre una mesa con la ventana luminosa **detrás**, a 1–2 m, y ponte del lado opuesto, a una hora con buena luz exterior.
+   1. Pon el modo **A**, **f/5.6**, **ISO 200**, el lente en **35 mm** y la compensación en **0**.
+   2. Pon la zona AF en **Punto único** (botón _i_ > Modo de zona AF).
+   3. **Foto 1:** medición **Matricial**, con el punto de enfoque en la taza.
+   4. **Foto 2:** medición **Ponderada central**, con la taza en el centro del encuadre.
+   5. **Foto 3:** medición **Puntual**, con el punto de enfoque sobre la taza.
+   6. **Foto 4:** medición **Puntual**, moviendo el punto de enfoque con el multiselector a una zona de la ventana (el cielo o la pared exterior). Si el enfoque se va al exterior, no importa para este ejercicio.
+   7. Anota la velocidad de cada foto y revisa cada una en la vista de **Altas luces** y en la de **Histograma**.
+   8. Calcula la diferencia en pasos entre la Foto 3 y la Foto 4.
+2. **Lectura de histogramas y bloqueo AE-L (45 min).** Reconoce histogramas típicos y aprende a medir en un punto y recomponer.
+   1. Pon el modo **A**, **f/5.6**, **ISO 400** y la medición matricial.
+   2. **Escena clara ("clave alta"):** una taza blanca sobre una hoja blanca, junto a la ventana. Toma la foto en 0 y luego con **+1.3**.
+   3. **Escena oscura ("clave baja"):** una taza o una fruta oscura sobre la tela negra, con poca luz lateral. Toma la foto en 0 y luego con **−1.3**.
+   4. **Escena normal:** tu escritorio o una repisa con objetos variados, con compensación 0.
+   5. Revisa los histogramas y anota la forma de cada uno.
+   6. Cambia a medición **Puntual**, con la zona AF en **Punto único** en el **centro**. Coloca una planta o un objeto de tono medio a un lado de la ventana: quieres encuadrarlo a la izquierda, con la ventana ocupando la derecha.
+   7. Apunta el punto central a la planta, presiona el disparador a medias (enfoca) y **mantén presionado AE-L/AF-L**. Sin soltarlo, **recompón** (planta a la izquierda, ventana a la derecha) y dispara.
+   8. Toma otra foto igual, pero **sin** AE-L: solo con el disparador a medias y recomponiendo.
+
+</Callout>
+
+Solución. En las tres mediciones, la ventana parpadea más en la **Foto 3** (puntual sobre la taza), y la taza es una silueta en la **Foto 4** (puntual sobre la ventana). La diferencia en pasos entre las dos es el **contraste** de la escena: si es mayor de 8–10 pasos, ninguna foto única podrá mostrar bien ambas cosas. Si en la Foto 4 querías conservar la taza enfocada, enfócala primero y mide la ventana con AE-L, como en la segunda parte del ejercicio.
+
+En los histogramas, las versiones compensadas (+1.3 en la escena clara, −1.3 en la oscura) deben verse "como la escena real", con el histograma desplazado a la derecha en la clara y a la izquierda en la oscura. En 0, el exposímetro acerca las dos al gris medio, como viste en B1.6.
+
+En medir y recomponer, en la foto con AE-L la planta está bien expuesta aunque la ventana entró en el encuadre. Sin AE-L, la exposición cambió al recomponer: con medición puntual, la cámara midió lo que había en el centro en el momento de disparar, y la planta probablemente salió más oscura.
+
+<Callout type="tip" title="Para tus temas">
+
+Medir y recomponer es la técnica ideal para fotografiar un edificio iluminado por el sol con un cielo brillante, o una flor iluminada sobre un fondo de sombra.
+
+</Callout>
+
+<Callout type="risk">
+
+- **Dejar la medición en puntual al terminar:** en una escena normal, la siguiente foto dependerá de un único punto y puede salir muy clara u oscura. Vuelve a **Matricial**, tu modo por defecto.
+- **La luz exterior cambia entre fotos:** si pasa una nube, las velocidades del contraluz dejan de ser comparables y el contraste calculado no sirve. Toma las cuatro fotos seguidas.
+- **Recomponer con el disparador a medias creyendo que la exposición está fija:** es justo lo que demuestra la última foto; solo AE-L bloquea la exposición.
+
+</Callout>
+
+<Callout type="mastery">
+
+Eliges la medición matricial por defecto y la puntual para contraluces y alto contraste, lees el histograma según la escena sin buscar una forma ideal, decides qué altas luces puedes dejar quemadas y cuáles no, y usas AE-L para medir en el punto que importa y recomponer sin que cambie la exposición.
+
+</Callout>
+
+## Resumen
+
+- La medición matricial analiza toda la escena, la ponderada central da más peso al centro y la puntual mide solo el punto de enfoque activo.
+- El histograma va de negro (izquierda) a blanco (derecha); una montaña pegada a un borde indica sombras empastadas o altas luces quemadas.
+- No existe un histograma correcto: una escena clara lo carga a la derecha, y una oscura, a la izquierda.
+- Las altas luces parpadean en reproducción; un cielo quemado no se recupera, una lámpara quemada suele ser aceptable.
+- Al mediodía, el contraste suele exceder el rango dinámico; las primeras y últimas horas del día son más fáciles.
+- El disparador a medias bloquea el enfoque, no la exposición; para fijarla, mantén presionado AE-L.
