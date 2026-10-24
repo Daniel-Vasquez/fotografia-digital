@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { getCollection, render } from "astro:content";
 import CourseLayout from "../../../layouts/CourseLayout.astro";
 import Callout from "../../../components/Callout.astro";
+import Figure from "../../../components/Figure.astro";
 import MarkAsReadButton from "../../../components/MarkAsReadButton";
 import SectionNav from "../../../components/SectionNav.astro";
 
@@ -58,7 +59,7 @@ const { sectionId, title, summary, order, minutes } = entry.data;
     </header>
 
     <div class="prose prose-lg max-w-none font-serif prose-headings:font-semibold prose-headings:tracking-tight prose-h2:mt-14 prose-pre:my-6">
-      <Content components={{ Callout }} />
+      <Content components={{ Callout, Figure }} />
     </div>
 
     <footer class="mt-16 border-t border-surface-2 pt-8">
